@@ -322,6 +322,7 @@
 
         <form id="contactForm" action="https://formspree.io/f/maqgrzor" method="POST">
 
+<input type="hidden" name="_next" value="https://theinletview-web.github.io/theinletview/thank-you.html">
 
             <!-- Stay Details -->
 <!-- Stay Details -->
@@ -399,7 +400,8 @@
                 <div class="col-md-6">
 
                     <div class="form-group mb-3">
-                        <input class="form-control"
+                        <input class="form-control" required
+        minlength="2"
                                id="name"
 							   name="name"
                                type="text"
@@ -408,7 +410,7 @@
 
 
                     <div class="form-group mb-3">
-                        <input class="form-control"
+                        <input class="form-control" required
                                id="email"
 							   name="email"
                                type="email"
@@ -417,7 +419,7 @@
 
 
                     <div class="form-group mb-md-0">
-                        <input class="form-control"
+                        <input class="form-control" pattern="[\+0-9\s\-\(\)]{7,20}"
                                id="phone"
 							    name="phone"
                                type="tel"
@@ -431,10 +433,10 @@
                 <div class="col-md-6">
 
                     <div class="form-group form-group-textarea mb-md-0">
-                        <textarea class="form-control"
-                                  id="message"
+                        <textarea class="form-control" required
+                                  id="message" minlength="10" minlength="500"
 								   name="message"
-                                  placeholder="Check-in/Check-out dates, Number of Adults/Children/Pets, Special requests, etc.)">
+                                  placeholder="Check-in/Check-out dates, Number of Adults/Children/Pets, Special requests, etc. ) *">
 								  
                         </textarea>
                     </div>
@@ -462,9 +464,7 @@
 
         <br>
 
-
-        <!-- Google Map -->
-        <iframe 
+<iframe 
             src="https://www.google.com/maps?q=1036+Matsqui+Avenue+Port+Alice&output=embed"
             width="100%" 
             height="175"
@@ -472,10 +472,286 @@
             allowfullscreen=""
             loading="lazy">
         </iframe>
+        
 
 
     </div>
 </section>
+<!-- Policies Section -->
+<section class="page-section" id="policies" style="background-color:#fbfafd; padding:80px 0;">
+
+<div class="container">
+
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase"
+            style="font-family:'Cinzel', serif; color:#0a1047;">
+            Policies
+        </h2>
+
+        <p class="text-muted">
+            Important information for your stay
+        </p>
+    </div>
+
+
+    <!-- Policy Tabs -->
+    <ul class="nav nav-tabs justify-content-center mt-4" id="policyTabs" role="tablist">
+
+<li class="nav-item">
+            <button class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#bookdirect"
+            type="button">
+
+            Book Direct With Us
+
+            </button>
+        </li>
+
+        <li class="nav-item">
+            <button class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#cancellation"
+            type="button">
+
+            Cancellation
+
+            </button>
+        </li>
+
+
+        <li class="nav-item">
+            <button class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#check-in"
+            type="button">
+
+            Check-in / Check-out
+
+            </button>
+        </li>
+
+
+        <li class="nav-item">
+            <button class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#pet"
+            type="button">
+
+            Pet Policy
+
+            </button>
+        </li>
+
+
+        <li class="nav-item">
+            <button class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#rules"
+            type="button">
+
+            House Rules
+
+            </button>
+        </li>
+
+
+    </ul>
+
+
+
+    <!-- Tab Content -->
+    <div class="tab-content p-5 bg-white shadow-sm" id="policyContent">
+<div class="tab-pane fade show active"
+        id="bookdirect">
+		<h5>Book Direct With Us</h5>
+		<p>
+Booking directly with <strong>The Inlet View</strong> gives you a simple and 
+personalized reservation experience.
+</p>
+
+<p>
+Enjoy the benefits of booking directly:
+</p>
+
+<p>
+✓ Flexible cancellation options available<br>
+✓ Direct communication for reservation questions and requests<br>
+✓ No third-party service fees that may apply through external booking platforms<br>
+✓ Easy assistance with reservation changes or special requests<br>
+✓ Access to the most accurate availability and stay information
+</p>
+
+<p>
+Reservations made through third-party booking websites are subject to the 
+terms, conditions, cancellation policies, and fees of the respective booking platform.
+</p>
+		</div>
+
+        <!-- Cancellation -->
+	<div class="tab-pane fade"
+        id="cancellation">
+
+            <h5>Cancellations</h5>
+
+            <p>
+We understand that plans can change. Our cancellation policy is designed to provide flexibility while allowing us to prepare for your arrival.
+</p>
+
+<p>
+<strong>Cancellation Terms:</strong>
+<br><br>
+
+• Cancel <strong>7 days or more before check-in</strong>: Full refund.<br>
+• Cancel <strong>within 7 days of check-in</strong>: 50% of the total reservation amount will be charged.<br>
+• Cancel <strong>within 48 hours of check-in or do not arrive</strong>: Full reservation amount will be charged.
+</p>
+
+<p>
+For unexpected circumstances, please contact us directly as soon as possible.
+</p>
+        </div>
+
+
+        <!-- Check In -->
+        <div class="tab-pane fade"
+        id="check-in">
+
+            <h4>Check-in & Check-out</h4>
+<p>
+            <strong>Check-in:</strong> 3:00 PM – 8:00 PM
+            <br>
+            <strong>Check-out:</strong> By 11:00 AM
+            <br><br>
+
+            Early check-in or late check-out may be available upon request.
+            </p>
+            
+
+        </div>
+
+
+
+        <!-- Pets -->
+        <div class="tab-pane fade"
+        id="pet">
+
+            <h4>Pet Policy</h4>
+
+            <p>
+The Inlet View welcomes guests travelling with approved pets. 
+To ensure a comfortable stay for all guests, pets must be disclosed and approved 
+prior to arrival.
+</p>
+
+<p>
+<strong>Pet Registration Information:</strong>
+<br><br>
+
+Guests travelling with pets are required to provide:
+<br>
+• Type of pet<br>
+• Breed and size<br>
+• Number of pets travelling<br>
+• Pet's age<br>
+• Any behavioural concerns or special requirements
+</p>
+
+
+<p>
+<strong>Pet Fee:</strong>
+<br><br>
+
+Approved pets are subject to a pet cleaning fee of $____ per stay. 
+The fee covers additional cleaning required after a pet-friendly stay and must 
+be paid before check-in.
+</p>
+
+
+<p>
+<strong>Pet Requirements During Your Stay:</strong>
+<br><br>
+
+• Pets must remain under the owner's control at all times.<br>
+• Pets must not be left unattended inside the accommodation unless approved in advance.<br>
+• Pets are not permitted on beds, furniture, or linens unless protected with guest-provided coverings.<br>
+• Guests must clean up after their pets both indoors and outdoors.<br>
+• Excessive barking, aggressive behaviour, or disturbance to other guests is not permitted.
+</p>
+
+
+<p>
+<strong>Cleaning and Damage Responsibility:</strong>
+<br><br>
+
+Guests must notify the host immediately if their pet causes any damage, 
+including damage to mattresses, bedding, furniture, flooring, walls, or other 
+property items.
+</p>
+
+
+<p>
+Guests are responsible for the reasonable cost of repairs, replacement, or 
+additional cleaning required due to pet-related damage beyond normal use.
+</p>
+
+
+<p>
+<strong>Service Animals:</strong>
+<br><br>
+
+Recognized service animals are welcome in accordance with applicable 
+British Columbia regulations. Service animals are not considered pets and are 
+not subject to pet fees.
+</p>
+
+
+<p>
+Guests travelling with service animals should inform us before arrival so we 
+can ensure a smooth and comfortable stay.
+</p>
+
+        </div>
+
+
+
+        <!-- Rules -->
+        <div class="tab-pane fade" id="rules">
+
+            <h5>House Rules</h5>
+<p>
+To ensure a peaceful and enjoyable stay for everyone:
+</p>
+
+<p>
+• Quiet hours are observed between 10:00 PM and 8:00 AM<br>
+• No parties, events, or disruptive gatherings are permitted<br>
+• Guests must respect the property, other guests, and the surrounding neighbourhood<br>
+• Please leave shared spaces clean and tidy<br>
+• Only registered guests are permitted to stay overnight<br>
+• Smoking, vaping, cannabis use, and the use of any smoking products are strictly prohibited inside guest rooms, buildings, and near entrances or common areas<br>
+</p>
+
+<p>
+<strong>Smoking Policy & Additional Charges:</strong>
+<br><br>
+
+The Inlet View is a smoke-free property. If smoking or vaping occurs inside the accommodation or in restricted areas, guests may be responsible for additional cleaning, deodorizing, and restoration costs required to return the space to a smoke-free condition.
+</p>
+
+<p>
+This may include, but is not limited to, deep cleaning of furniture, carpets, bedding, curtains, mattresses, and other affected items. Guests may also be responsible for any costs associated with loss of use of the accommodation due to smoke remediation.
+</p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
 		
         <!-- Footer-->
         <footer class="footer py-4">
@@ -484,8 +760,8 @@
                       <div style="display: flex; gap: 5px;">
 					  <div class="container text-center">
 					  
-					 <a href="policies.html" target="_blank" style="color: black;">Policies</a> | 
-					 <a href=#contact style="color: black;">Contact</a>
+					 <a href="policies.html" target="_blank">Policies</a> | 
+					 <a href=#contact>Contact</a>
 					 
 					
         <p>© 2026 The Inlet View | Port Alice, BC</p>
