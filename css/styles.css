@@ -73,7 +73,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ffc800;
+  --bs-link-color: #0a1047;
   --bs-link-hover-color: #cca000;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
@@ -11266,8 +11266,10 @@ header.masthead .masthead-heading {
 section#contact {
   
   background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 section#contact .section-heading {
   color: #fff;
@@ -11321,6 +11323,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: 'Cinzel', serif;
+  font-weight: 700;
 }
 .amenities-section {
   padding: 60px 20px;
@@ -11356,8 +11359,15 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.95rem;
 }
 body {
-      background: #6895be;
+      background: #fafafa;
       font-family: 'Cinzel',serif;
+	  font-weight: 700
+    }
+	
+	body1 {
+      background: #fafafa;
+      font-family: 'Montserrat', sans-serif;
+	  
     }
 
     .amenities-section {
