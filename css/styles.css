@@ -11448,7 +11448,7 @@ color:#fff;
 }
 .hero-script {
     font-family: "Great Vibes", cursive;
-    font-size: 7.5rem;
+    font-size: 6.5rem;
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -11462,10 +11462,43 @@ color:#fff;
 .hero-subtitle {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.35rem;
-    font-weight: 300;
+    font-weight: 700;
     max-width: 700px;
     margin: 0 auto 2rem;
     color: rgba(255,255,255,.95);
 
     text-shadow:
         1px 1px 5px rgba(0,0,0,.5);
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background: #0a1047;
+    color: #f5efe5;
+    font-size: 18px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px);
+    background: #8b6f47;
+    color: white;
+}	
+.review-card {
+    background: rgba(255,255,255,0.9);
+    padding: 30px 25px;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}		
